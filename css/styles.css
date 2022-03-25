@@ -1,15 +1,24 @@
-
-
+/* *{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+} */
 body {
-    justify-content: center;
-    height: auto;
-    background-color: #e2ebe4;
+   display:block;
+   font-family: 'Courier New', Courier, monospace;
+   justify-content: center;
+   height: auto;
+   background-color: #e2ebe4;
   }
   .container{
       background-color: green ;
       width: auto;
+      max-width: 1100px;
+      margin:0 auto;
       height:auto;
       padding: 20px;
+      box-shadow: center;
+      flex-grow:1;
   }
   h1{
     text-align: center;
@@ -18,10 +27,13 @@ body {
   }
   .review{
       align-items: flex;
+      flex-direction: row;
+      justify-content: space-around;
       flex-wrap: wrap;
+      box-sizing: border;
   }
   .image{
-      margin-left: 26rem;
+      margin-left: 26vh;
       margin-bottom:auto; 
   }
   .image img{
@@ -52,15 +64,7 @@ body {
   padding-top:auto;
   
   }
-    i {
-      text-align: center;
-      color:red;
-      margin-left:30rem;
-  }
-  @media screen and (min-width: 580px) {
-    body {
-      background-color: aqua;
-    }
-  }
+
+  
 
   
