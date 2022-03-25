@@ -1,0 +1,66 @@
+
+
+body {
+    justify-content: center;
+    height: auto;
+    background-color: #e2ebe4;
+  }
+  .container{
+      background-color: green ;
+      width: auto;
+      height:auto;
+      padding: 20px;
+  }
+  h1{
+    text-align: center;
+    padding-top: 3vh;
+
+  }
+  .review{
+      align-items: flex;
+      flex-wrap: wrap;
+  }
+  .image{
+      margin-left: 26rem;
+      margin-bottom:auto; 
+  }
+  .image img{
+      border-radius: 50%;
+      border: 1px solid #9ce63b;
+      opacity: 0.9;
+  }
+  img:hover {
+    transform: scaleX(-1);
+    transition-delay: 2s;
+  }
+  p {
+      text-align:center;
+      padding:auto;
+  }
+  p , info{
+      display: block;
+      text-align: center;
+      align-items: center;
+      margin: 20vh;
+  }
+ .random-btn{
+  border-radius:8%;
+  border: 2px solid blue;
+  margin-left:32rem;
+  flex-direction: center;
+  height:5vh;
+  padding-top:auto;
+  
+  }
+    i {
+      text-align: center;
+      color:red;
+      margin-left:30rem;
+  }
+  @media screen and (min-width: 580px) {
+    body {
+      background-color: aqua;
+    }
+  }
+
+  
