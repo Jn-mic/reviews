@@ -36,7 +36,12 @@ body {
       box-sizing: border;
       padding-top: 3px;
   }
-
+.image{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height:100%;
+}
   
 
   .image img{
@@ -56,16 +61,16 @@ body {
       display:flex;
       justify-content:center;
       text-align: center;
-      font-size: 3vh;
+      font-size: 30px;
       flex-wrap: wrap;
-      font-weight: 20px;
-      background: orange;
+      font-weight: bold;
+      background: rgba(235, 209, 161, 0.212);
       height:100%;
       margin-left: 10rem;
       margin-right: 10rem;
-      border-radius: 10%;
+      border-radius: 5%;
       flex-direction: row;
-      padding-bottom:5px;
+      padding-bottom:20px;
   }
   p {
       flex-direction: column;
@@ -78,6 +83,17 @@ body {
   }
 
 
-  
+  @media(max-width:768px ){
+    .container .card{
+      
+      background-color: rgb(230, 106, 106);
+      flex-direction: column;
+      padding-top: 20px;
+      text-align: center;
+    }
+    .review{
+      display:block;
+    }
+  }
 
   
