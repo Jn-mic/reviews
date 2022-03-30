@@ -39,23 +39,17 @@ const btnNext= document.querySelector('.next-btn');
 const randomBtn= document.querySelector('.random-btn');
 
 // initial value/ item
-let currentValue= 0;
+let currentValue = 3;
 
 window.addEventListener('DOMContentLoaded', function(){
-    let item = [currentValue]
-
-    randomSample();
-
+   
+    randomSample(currentValue);
 });
 
 function randomSample(){
-    img.scr = item.image;
+    const item = reviews[currentValue];
+    // image.src = item.image;
     name.textContext= item.name;
     job.textContext= item.job;
-    text.textContext = item.text;
-}
-
-// function getRandomReviews(){
-
-    
-// }
+    info.textContext = item.info;
+};

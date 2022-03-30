@@ -36,19 +36,13 @@ body {
       box-sizing: border;
       padding-top: 3px;
   }
-.image{
-  display:flex;
-  justify-content:center;
-  align-items: center;
-  height:100%;
-}
   
-
-  .image img{
+   #image{
       display:flex;
       justify-content:center;
       align-items: center;
-      margin: 0 auto 0;
+      flex-wrap: wrap;
+      width: auto;
       border-radius: 50%;
       border: 1px solid #9ce63b;
       opacity: 0.9;
