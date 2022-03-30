@@ -83,16 +83,11 @@ body {
   }
 
 
-  @media(max-width:768px ){
-    .container .card{
-      
-      background-color: rgb(230, 106, 106);
+  @media(max-width = 768px ){
+    .image{
       flex-direction: column;
       padding-top: 20px;
-      text-align: center;
-    }
-    .review{
-      display:block;
+    
     }
   }
 

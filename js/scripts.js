@@ -34,3 +34,21 @@ const name = document.getElementById('name');
 const info = document.getElementById('info');
 
 // Query the 
+const btnPrev= document.querySelector('.prev-btn');
+const btnNext= document.querySelector('.next-btn');
+const randomBtn= document.querySelector('.random-btn');
+
+// initial value/ item
+
+let currentValue= 0;
+
+window.addEventListener('DOMContentLoaded', function(){
+    let item= [currentValue]
+
+    getRandom();
+
+});
+
+function getRandom(){
+    
+}
