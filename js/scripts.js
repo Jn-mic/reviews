@@ -33,22 +33,29 @@ const job = document.getElementById('job');
 const name = document.getElementById('name');
 const info = document.getElementById('info');
 
-// Query the 
+// querying the buttons and random values
 const btnPrev= document.querySelector('.prev-btn');
 const btnNext= document.querySelector('.next-btn');
 const randomBtn= document.querySelector('.random-btn');
 
 // initial value/ item
-
 let currentValue= 0;
 
 window.addEventListener('DOMContentLoaded', function(){
-    let item= [currentValue]
+    let item = [currentValue]
 
-    getRandom();
+    randomSample();
 
 });
 
-function getRandom(){
-    
+function randomSample(){
+    img.scr = item.image;
+    name.textContext= item.name;
+    job.textContext= item.job;
+    text.textContext = item.text;
 }
+
+// function getRandomReviews(){
+
+    
+// }
