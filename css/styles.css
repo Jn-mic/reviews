@@ -1,14 +1,10 @@
-/* *{
-  box-sizing: border-box;
-  margin:0;
-  padding:0;
-} */
+
 body {
    display:block;
    font-family: 'Courier New', Courier, monospace;
    justify-content: center;
    height: auto;
-   background-color: #e2ebe4;
+   background-color: #b2c5b6;
   }
   .container {
       background-color: rgb(228, 240, 228) ;
@@ -36,6 +32,7 @@ body {
   #image{
     padding-top: 10px;
     position: relative;
+    display:flex;
   }
   
    img{
@@ -72,11 +69,6 @@ body {
       align-items: center;
       margin: 10px;
   }
-  .prev-btn, .next-btn{
-    background:rgb(235, 231, 231);
-
-  }
-
   @media(max-width = 768px ){
     #image{
       flex-direction: column;
