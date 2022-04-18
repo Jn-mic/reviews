@@ -34,13 +34,14 @@ const btnPrev= document.querySelector('.prev-btn');
 const btnNext= document.querySelector('.next-btn');
 const randomBtn= document.querySelector('.random-btn');
 
-//  initial value
+//  setting an initial value
 let currentItem = 0;
 
+// Load initial item
 window.addEventListener('DOMContentLoaded', function(){
     showPerson();
 });
-// show person based on item
+// setting a showPerson to display items
 function showPerson(){
     const item = reviews[currentItem];
     photo.src = item.image;
@@ -48,7 +49,7 @@ function showPerson(){
     job.textContext= item.occupation;
     info.textContext = item.text;
 };
-
+// initialing an event listener on the prevBtn
 btnPrev.addEventListener('click', function(){
     currentItem++;
     if (currentItem > reviews.length -1) {
@@ -56,6 +57,7 @@ btnPrev.addEventListener('click', function(){
     }
     showPerson();
 });
+// initialing an event listener on the nextBtn
 
 btnNext.addEventListener('click', function(){
     currentItem--;
@@ -65,7 +67,7 @@ btnNext.addEventListener('click', function(){
     showPerson();
 });
 
-// random buttons
+// setting an addEventListener on randomBtn to trigger prevBtn and nextBtn upon click
 randomBtn.addEventListener('click', function () {
     currentItem = Math.floor(Math.random()*reviews.length);
 
